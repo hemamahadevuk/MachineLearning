@@ -1,0 +1,11 @@
+Ensemble learning:
+
+Combine multiple models to get a better than result than a single model
+
+Weak model -> combine -> Strong model
+
+Types:
+1. Bagging -> Parallel learning -> Random Forest
+2. Boosting -> 1. Adaboost 2. Gradient boosting 3. XGBoost
+
+

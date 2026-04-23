@@ -1,0 +1,53 @@
+Boosting:
+====================
+Boosting models sequentially, where each model focuses on previous mistakes
+
+Model1 -> makes error
+Model2 -> focuses on those error
+Model3 -> improves further
+Final -> Strong model
+
+Training :
+Random forest -> Parallel
+Boosing -> sequential 
+
+Focus:
+Random Forest -> Reduce Variance
+Boosting -> Reduce Bias
+
+Independence:
+Random Forest -> Trees independent
+Boosting -> Trees dependent
+
+Gradient Boosting:
+=======================
+Instead of learning directly -> model learns from residuals
+
+Key formula:
+Final prediction = prediction1+prediction2......
+
+Residual = Actual - Predicted
+
+Next model learns residual
+
+Why Gradient:
+------------
+Uses gradient from calculus to minimise error
+
+Gradient = direction to reduce error
+
+Steps:
+1. Start with simple prediction
+2. Compute residual (error)
+3. Train new tree on residual
+4. Add to previous prediction
+5. Repeat
+
+Learning Rate:
+Controls how much each tree contribute -> high -> fast but risky -> keep it 0.1
+n_estimators -> number of trees
+Learning_rate -> step size
+max_depth -> tree complexity
+
+
+

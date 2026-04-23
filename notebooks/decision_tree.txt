@@ -1,0 +1,64 @@
+Decision Trees
+
+
+It recursively split the dataset based on feature thresholds to minimise  impurity using metrics like Gini or Entropy. The model selects splits that maximises information  gain and regulation techniques  like max_depth to prevent overfitting.
+
+Impurity
+- how mixed data is
+
+Pure -> same class
+Impure -> mixed class
+
+Before split 
+[Apple, Apple, Orange, Orange]
+
+After split
+Left:  [Apple, Apple]
+Right: [Orange, Orange]
+
+How impurities are measured:
+1. Gini
+2. Entropy
+
+Gini -> 0 -> pure node -> probability of wrong classification
+Entropy -> amount of uncertainty or randomness -> 0 entropy pure node -> mixed node -> high entropy
+
+
+Information Gain:
+
+How much did we reduce confusion after a split?
+Before = HIGH
+After  = 0
+Gain   = BIG
+
+How Decision Tree uses it
+
+At each node:
+
+	1	Try all possible splits
+	2	Calculate entropy for each
+	3	Compute gain
+	4	Pick split with:
+MAXIMUM Information Gain
+
+Information Gain measures how much uncertainty is reduced after a split. Decision Trees choose the split that maximizes Information Gain.
+
+Entropy = confusion
+Information gain. = reduction  in confusion 
+Decision tree = maximise at every step
+
+Tree Building:
+1. Start with full dataset
+2. Find best split
+3. Divide into two groups
+4. Repeat recursively
+5. Stop when:
+     Pure node
+     Max depth reached
+
+Overfitting:
+ Tree becomes too deep -> memorise data -> poor generalisation
+
+
+
+

@@ -1,0 +1,27 @@
+Random Forest:
+
+Problem with decision trees:
+
+1. Overfits easily
+2. Very sensitive to data
+3. Small change -> completely different tree
+
+Core idea:
+Dont trust single tree -> use many trees 
+
+Tree 1 -> Class A
+Tree 2 -> Class B
+Tree 3 -> Class C
+
+How Random Forest works:
+1. Bootstrap sampling
+Create multiple tress from original with replacement 
+2. Train multiple trees with different data
+3. Feature randomness
+ Don't use all features 
+ Use random subset
+4. Voting
+  Classification: Major vote
+  Regression: Average
+
+Random forest is an ensemble learning method that builds multiple decision trees using bootstrap sampling and feature randomness and combines its predictions through voting to reduce variance
